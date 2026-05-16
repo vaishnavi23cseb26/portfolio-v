@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me — Vaishnavi S</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<button class="menu-toggle" onclick="toggleSidebar()" id="menuToggle">☰</button>
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-brand">
+    <div class="initials">VS</div>
+    <h2>Vaishnavi S</h2>
+    <p>CS Engineer · Batch 2027</p>
+  </div>
+  <nav>
+    <a href="index.html"><span class="nav-icon">🏠</span> Home</a>
+    <a href="about.html" class="active"><span class="nav-icon">👤</span> About Me</a>
+    <a href="skills.html"><span class="nav-icon">⚡</span> Skills</a>
+    <a href="projects.html"><span class="nav-icon">🚀</span> Projects</a>
+    <a href="certificates.html"><span class="nav-icon">🏅</span> Certificates</a>
+  </nav>
+  <div class="sidebar-bottom"><p>© 2025 Vaishnavi S</p></div>
+</aside>
+
+<main class="main">
+  <section class="section" id="section-about">
+    <div class="section-header"><p class="label">About</p><h1>Who I Am</h1></div>
+    <div class="about-grid">
+      <div class="about-card full">
+        <h3>Short Bio</h3>
+        <p>I'm Vaishnavi S, an enthusiastic Computer Science undergraduate (Batch 2027) at Velammal College of Engineering and Technology, Madurai, with a CGPA of 8.46. I'm proficient in full-stack web development, machine learning, and database management — a quick learner with hands-on internship experience and a strong passion for building efficient, real-world software solutions.</p>
+      </div>
+      <div class="about-card">
+        <h3>Education</h3>
+        <div class="edu-item">
+          <div class="edu-school">Velammal College of Engineering & Technology</div>
+          <div class="edu-degree">B.E. Computer Science and Engineering</div>
+          <div class="edu-meta"><span>CGPA: 8.46</span><span>2023 – 2027</span></div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-school">Mahatma Matriculation Hr. Sec. School</div>
+          <div class="edu-degree">Class XII</div>
+          <div class="edu-meta"><span>Score: 513</span><span>2023</span></div>
+        </div>
+      </div>
+      <div class="about-card">
+        <h3>Internship Experience</h3>
+        <div class="internship-badge">🔥 AI/ML Intern</div>
+        <div style="font-weight:600;font-size:15px;margin-bottom:4px;">Vinsup Infotech, Madurai</div>
+        <div style="font-size:12px;color:var(--text-muted);margin-bottom:12px;">June 2025 – July 2025</div>
+        <p>Developed and evaluated ML models using Python with supervised learning techniques. Built AI pipelines using LangChain, Groq, and Groq Cloud. Performed data preprocessing and model training on real-world datasets.</p>
+      </div>
+      <div class="about-card full">
+        <h3>Career Objective</h3>
+        <p>To leverage my skills in full-stack web development and machine learning to contribute meaningfully to innovative teams. I aim to grow as a software developer by working on impactful projects, continuously learning emerging technologies, and building solutions that create real value — while securing a rewarding placement that aligns with my interest in AI, web development, and cloud computing.</p>
+      </div>
+      <div class="about-card">
+        <h3>Areas of Interest</h3>
+        <div class="skills-tags" style="margin-top:8px;">
+          <span class="skill-tag">🤖 AI & Machine Learning</span>
+          <span class="skill-tag">🌐 Full-Stack Development</span>
+          <span class="skill-tag">📊 Data Structures & Algorithms</span>
+          <span class="skill-tag">☁ Cloud Computing</span>
+          <span class="skill-tag">🔒 Cybersecurity</span>
+        </div>
+      </div>
+      <div class="about-card">
+        <h3>Events & Workshops</h3>
+        <div class="edu-item">
+          <div class="edu-school" style="font-size:13px;">Intuit's Code to Cloud Workshop</div>
+          <div class="edu-degree">NIT Trichy — Pragyan 2024</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-school" style="font-size:13px;">Sustainable Closed Loop System</div>
+          <div class="edu-degree">Presentation at SIT, Madurai</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-school" style="font-size:13px;">Trialthon of Tech</div>
+          <div class="edu-degree">Velammal College — Aug 2025</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/sidebar.js"></script>
+</body>
+</html>

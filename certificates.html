@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certificates — Vaishnavi S</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<button class="menu-toggle" onclick="toggleSidebar()" id="menuToggle">☰</button>
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-brand">
+    <div class="initials">VS</div>
+    <h2>Vaishnavi S</h2>
+    <p>CS Engineer · Batch 2027</p>
+  </div>
+  <nav>
+    <a href="index.html"><span class="nav-icon">🏠</span> Home</a>
+    <a href="about.html"><span class="nav-icon">👤</span> About Me</a>
+    <a href="skills.html"><span class="nav-icon">⚡</span> Skills</a>
+    <a href="projects.html"><span class="nav-icon">🚀</span> Projects</a>
+    <a href="certificates.html" class="active"><span class="nav-icon">🏅</span> Certificates</a>
+  </nav>
+  <div class="sidebar-bottom"><p>© 2025 Vaishnavi S</p></div>
+</aside>
+
+<main class="main">
+  <section class="section" id="section-certificates">
+    <div class="section-header"><p class="label">Certifications</p><h1>What I've Earned</h1></div>
+    <div class="certs-grid">
+      <div class="cert-card" onclick="openCertModal('trialthon')">
+        <div class="cert-icon bg-teal">🏅</div>
+        <div class="cert-issuer">Velammal College of Engg. & Tech.</div>
+        <h4>Trialthon of Tech — Certificate of Participation</h4>
+        <div class="cert-meta"><span class="cert-domain">Tech Event</span><span class="cert-date">Aug 2025</span></div>
+      </div>
+      <div class="cert-card" onclick="openCertModal('vinsup')">
+        <div class="cert-icon bg-red">🔥</div>
+        <div class="cert-issuer">Vinsup Infotech (P) Ltd</div>
+        <h4>AI/ML Internship — Python, LangChain, Groq</h4>
+        <div class="cert-meta"><span class="cert-domain">AI / ML</span><span class="cert-date">May–Jun 2025</span></div>
+      </div>
+      <div class="cert-card" onclick="openCertModal('sap')">
+        <div class="cert-icon bg-green">🏢</div>
+        <div class="cert-issuer">SAP Learning</div>
+        <h4>Introducing SAP ABAP Platform Fundamentals</h4>
+        <div class="cert-meta"><span class="cert-domain">Enterprise Software</span><span class="cert-date">May 2025</span></div>
+      </div>
+      <div class="cert-card" onclick="openCertModal('cloud')">
+        <div class="cert-icon bg-teal">☁</div>
+        <div class="cert-issuer">NPTEL — IIT Kharagpur</div>
+        <h4>Cloud Computing</h4>
+        <div class="cert-meta"><span class="cert-domain">Cloud Computing</span><span class="cert-date">Jan–Apr 2025 · Score: 58%</span></div>
+      </div>
+      <div class="cert-card" onclick="openCertModal('sql')">
+        <div class="cert-icon bg-blue">🗄</div>
+        <div class="cert-issuer">Sololearn</div>
+        <h4>Introduction to SQL</h4>
+        <div class="cert-meta"><span class="cert-domain">Database</span><span class="cert-date">Mar 2025</span></div>
+      </div>
+      <div class="cert-card" onclick="openCertModal('cyber')">
+        <div class="cert-icon bg-blue">🔒</div>
+        <div class="cert-issuer">Tata STRIVE × Microsoft</div>
+        <h4>Cybersecurity for Beginners</h4>
+        <div class="cert-meta"><span class="cert-domain">Cybersecurity</span><span class="cert-date">Nov 2024 · 40 hours</span></div>
+      </div>
+      <div class="cert-card" onclick="openCertModal('testing')">
+        <div class="cert-icon bg-orange">🧪</div>
+        <div class="cert-issuer">NPTEL — IIT Madras</div>
+        <h4>Software Testing</h4>
+        <div class="cert-meta"><span class="cert-domain">Software Engineering</span><span class="cert-date">Jul–Oct 2024 · Score: 51%</span></div>
+      </div>
+      <div class="cert-card" onclick="openCertModal('dataanalytics')">
+        <div class="cert-icon bg-purple">📊</div>
+        <div class="cert-issuer">Marcello Tech × AICTE</div>
+        <h4>Data Analytics Internship</h4>
+        <div class="cert-meta"><span class="cert-domain">Data Analytics</span><span class="cert-date">Jul–Sep 2024 · 2 months</span></div>
+      </div>
+      <div class="cert-card" onclick="openCertModal('mongodb')">
+        <div class="cert-icon bg-green">🍃</div>
+        <div class="cert-issuer">MongoDB University</div>
+        <h4>Introduction to MongoDB for Students</h4>
+        <div class="cert-meta"><span class="cert-domain">Database</span><span class="cert-date">July 2024</span></div>
+      </div>
+      <div class="cert-card" onclick="openCertModal('pragyan')">
+        <div class="cert-icon bg-purple">🏛</div>
+        <div class="cert-issuer">NIT Trichy — Pragyan 2024</div>
+        <h4>Intuit's Code to Cloud Workshop</h4>
+        <div class="cert-meta"><span class="cert-domain">Cloud & Dev Tools</span><span class="cert-date">Feb 2024</span></div>
+      </div>
+      <div class="cert-card" onclick="openCertModal('python')">
+        <div class="cert-icon bg-orange">🐍</div>
+        <div class="cert-issuer">Marcello Tech</div>
+        <h4>Essential Python Skills Internship</h4>
+        <div class="cert-meta"><span class="cert-domain">Python Programming</span><span class="cert-date">Nov–Dec 2023 · 1 week</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- CERT MODAL -->
+<div class="modal-overlay" id="certModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 id="cm-title"></h2>
+      <button class="modal-close" onclick="closeModal('certModal')">✕</button>
+    </div>
+    <div class="modal-body">
+      <p id="cm-issuer" style="color:var(--text-muted);font-size:14px;margin-bottom:4px;"></p>
+      <p class="modal-section-label">Domain</p><p id="cm-domain"></p>
+      <p class="modal-section-label">Details</p><p id="cm-details"></p>
+      <div class="cert-img-viewer" id="cm-img-wrap">
+        <p class="modal-section-label">Certificate</p>
+        <img id="cm-img" src="" alt="Certificate" style="width:100%;border-radius:12px;border:1px solid var(--border);">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/sidebar.js"></script>
+<script src="js/certificates.js"></script>
+</body>
+</html>
